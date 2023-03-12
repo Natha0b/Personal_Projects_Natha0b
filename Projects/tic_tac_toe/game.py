@@ -17,7 +17,7 @@ class TicTacToe:
         for row in number_board:
             print(' | ' + ' | '.join(row) + ' |')
 
-    def avaliable_moves(self):
+    def available_moves(self):
         return [i for i, spot in enumerate(self.board) if spot == ' ']
      
     def empty_squares(self):
@@ -41,7 +41,7 @@ class TicTacToe:
             return True
         
         col_ind = square % 3
-        colum = [self.board(col_ind+i*3) for i in range(3)]
+        colum = [self.board[col_ind+i*3] for i in range(3)]
         if all([spot == letter for spot in colum]):
             return True
         
@@ -62,7 +62,7 @@ def play(game, x_player, o_player, print_game=True):
     letter = 'x'
 
     while game.empty_squares():
-        if letter == '0':
+        if letter == 'o':
             square = o_player.get_move(game)
         else:
             square = x_player.get_move(game)
