@@ -1,27 +1,3 @@
-#Ordéneme una lista de menor a mayor
-
-# for numbers in range(11):
-#     print(numbers)
-
-
-# list = [5, 4, 3, 2, 1]
-# for i in range(len(list)):
-#     print(list[5:0])
-
-
-
-
-
-#Escriba un programa que me diga cuantas veces se repite cada número en una lista
-# 
-# Aquí la salida debería ser 
-# 3 unos hay 
-# 2 dos hay 
-# 2 tres hay 
-# 1 doce hay 
-# 1 siete hay 
-# 2 ochos hay 
-# 1 nueve
 
 list = [1,1,1,12,2,2,3,5,7,8,8,9,5,3]
 number = []
