@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de contacto</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        input{
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario web de usuario</h1>
+    <form action="/submit" method="POST">
+        <label>Nombre Completo:</label><br>
+        <input type="text" name="name"><br>
+        <label>Email:</label><br>
+        <input type="email" name="email"><br>
+        <label>Ciudad:</label><br>
+        <input type="text" name="city"><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
