@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My first project</title>
+    <script type="text/javascript">
+
+async function traerPais(){
+    const respuesta = await fetch("https://api.nationalize.io?name=michael");
+
+    if(!respuesta.OK){
+        let oops = "error 404: No se encontro ningún resultado";
+        alert(oops);
+        throw new Error(oops);
+    }
+
+
+    const nombre = respuesta.json();
+
+    return nombre;
+}
+
+function mostrarNombre(n){
+    document.getElementById("mensaje").innerHTML = n.country[0].country_id;
+}
+
+traerPais().then(mostrarNombre);
+
+    </script>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Proyecto</p>
+    <p id="mensaje">Cargando...</p>
+    <script type="text/javascript">
+        mostrarNombre("Loading")
+    </script>
+    
+</body>
+</html>
