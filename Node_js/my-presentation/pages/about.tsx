@@ -9,9 +9,9 @@ interface PersonalInfo {
 
 const AboutPage: NextPage = () => {
   const personalInfo: PersonalInfo = {
-    name: 'Tu Nombre',
-    profession: 'Tu Profesión',
-    description: 'Breve descripción sobre ti...',
+    name: 'Nathaly Ortiz',
+    profession: 'Student',
+    description: 'I am in the process of becoming a software developer, I am passionate about technology, the new challenges and experiences that I am acquiring in this wonderful path of programming.☁️👩🏽‍💻',
     image: '/profile-image.jpg' // Ruta a tu imagen de perfil
   };
 
